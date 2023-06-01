@@ -1,0 +1,7 @@
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.vcxproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.Converter.resources
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.HelpForm.resources
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.Window.resources
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.vcxproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Release\BCCTool.obj2infConverter.resources

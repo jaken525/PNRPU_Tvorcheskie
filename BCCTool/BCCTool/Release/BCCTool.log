@@ -1,0 +1,42 @@
+﻿  Window.cpp
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(150,14): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(195,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(230,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(297,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(362,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(369,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(377,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(385,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(400,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(437,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(472,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(570,24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj2inf.h(579,30): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(72,15): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(112,134): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(112,89): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(112,44): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(113,146): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(113,97): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(113,48): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(114,146): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(114,97): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(114,48): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(116,134): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(116,89): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(116,44): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(117,146): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(117,97): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(117,48): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(118,146): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(118,97): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(118,48): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(216,31): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(216,36): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Admin\source\repos\BCCTool\BCCTool\OpenGL.h(216,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Converter.h(285,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Converter.h(297,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\BCCTool\BCCTool\Window.cpp(16,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Converter.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  BCCTool.vcxproj -> C:\Users\Admin\source\repos\BCCTool\Release\BCCTool.exe
+C:\Users\Admin\source\repos\BCCTool\BCCTool\obj\BCCTool.vcxproj.nuget.g.targets(4,5): warning : Пакеты, содержащие целевые объекты и PROPS-файлы MSBuild, не могут быть полностью установлены в проектах, предназначенных для нескольких платформ. Целевые объекты и PROPS-файлы MSBuild были пропущены.

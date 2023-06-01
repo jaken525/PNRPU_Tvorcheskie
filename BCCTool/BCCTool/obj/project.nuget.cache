@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "i4GDHJwJ3/I8aGhuwSyPtpvg76NSbkdWYgCJh2yrhoTpB2VsaxHFJgfixjp+aM336ldmtjEJWowqybguMbBNiA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\BCCTool.vcxproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Невозможно прочитать сведения о проекте для \"BCCTool\": Идентификатор платформы \"\" недопустим."
+    }
+  ]
+}

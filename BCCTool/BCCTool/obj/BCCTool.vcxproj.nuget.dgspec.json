@@ -1,0 +1,25 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\BCCTool.vcxproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\BCCTool.vcxproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\BCCTool.vcxproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\BCCTool.vcxproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\BCCTool\\BCCTool\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        }
+      }
+    }
+  }
+}
