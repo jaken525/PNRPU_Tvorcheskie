@@ -2,7 +2,7 @@
 Выполнил: Студент группы РИС-22-1Б Поважный В. Е.
 
 # Дополнительные файлы для АРМ
-можно загрузить здесь:
+Можно загрузить здесь:
 https://drive.google.com/file/d/1Q9TtYbauFhmfY7rVXoevHiSZFASvOIn8/view?usp=sharing
 
 # Работы
