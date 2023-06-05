@@ -11,4 +11,4 @@ https://drive.google.com/file/d/1Q9TtYbauFhmfY7rVXoevHiSZFASvOIn8/view?usp=shari
 Задача Коммивояжёра: Commiglut
 
 # Видео
-https://youtu.be/fFDSjZtEdpY
+https://youtu.be/JylCImeD5mg
