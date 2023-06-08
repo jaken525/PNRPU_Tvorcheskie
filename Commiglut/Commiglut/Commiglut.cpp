@@ -10,15 +10,15 @@ int main(int argc, char** argv)
 
 	glutInit(&argc, argv);
 
-	makeGraph();
+	MakeGraph();
 
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(WinW, WinH);
 
 	glutCreateWindow("Graph");
 
-	glutDisplayFunc(display);
-	glutReshapeFunc(reshape);
+	glutDisplayFunc(Display);
+	glutReshapeFunc(Reshape);
 	glutMouseFunc(mouseClick);
 	glutPassiveMotionFunc(mouseMove);
 

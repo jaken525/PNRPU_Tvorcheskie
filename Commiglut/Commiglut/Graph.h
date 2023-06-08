@@ -11,7 +11,7 @@ const int maxSize = 20;
 extern int WinW;
 extern int WinH;
 
-struct VertexCoord
+struct VertexCoordinates
 {
 	int x, y;
 };
@@ -25,60 +25,65 @@ public:
 	int adjMatrix[maxSize][maxSize];
 
 	Graph();
-	~Graph();
+	~Graph() {}
 
-	bool IsEmpty();
-	bool IsFull();
+	bool IsEmpty()
+	{
+		if (vertList.size() != 0)
+			return false;
+		else
+			return true;
+	}
+	bool IsFull() { return (vertList.size() == maxSize); }
 
-	int GetVertPos(const int& vertex);
-	int GetVertText(int i);
+	int GetVerticesPos(const int& vertex);
+	int GetVerticesText(int i) { return vertList[i]; }
 
-	vector<int> GetVertList();
+	vector<int> GetVerticesList() { return  vertList; }
 
-	int GetAdjMatrixElem(int i, int j);
-	int GetAmountVerts();
+	int GetAdjMatrixElement(int i, int j) { return adjMatrix[i][j]; }
+	int GetAmountVertices() { return vertList.size(); }
 	int GetAmountEdges();
 
-	void SetEdgeZero(int i, int j);
+	void SetEdgeZero(int i, int j) { adjMatrix[i][j] = 0; adjMatrix[j][i] = 0; }
 	void InsertVertex(const int& vertex);
 	void InsertEdge(const int& vertex1, const int& vertex2, int weigth);
-	void Print();
-	void EraseLastVert();
+	void EraseLastVertex();
 	void EraseEdge(const int& vertex1, const int& vertex2);
+
+	void PrintGraph();
 	void DrawGraph();
 };
 
 extern Graph graph;
 
-void mouseMove(int x, int y);
+void MakeGraph();
+void Reshape(int w, int h);
+void Display();
 
-void makeGraph();
-void reshape(int w, int h);
-void display();
+void drawButtonSalesman();
+void drawButtonNewGraph();
+void drawButtonAddVertex();
+void drawButtonDelVertex();
+void drawButtonAddEdge();
+void drawButtonDelEdge();
 
-int** Change_Matrix();
-int* Search_MinElem(int* line, int n);
+int** ChangeMatrix();
+int* SearchMinElement(int* line, int n);
 
-void Print_Matrix(int** matrix);
+void PrintMatrix(int** matrix);
 
-int** Reduct_Matrix(int** oldmatrix);
-int** High_Zero(int** oldmatrix);
+int** ReductMatrix(int** oldmatrix);
+int** HighZero(int** oldmatrix);
 
-void Print_Result();
-void setCoords(int i, int n);
+void PrintResult();
+void SetCoordinats(int i, int n);
 
-bool SalesmanPossible(int** matrix);
+bool IsSalesmanPossible(int** matrix);
 
 void ButtonMouseOn(int x, int y);
 void mouseMove(int x, int y);
 void mouseClick(int button, int state, int x, int y);
-
-void drawBtnSalesman();
-void drawBtnNewGraph();
-void drawBtnAddVertex();
-void drawBtnDelVertex();
-void drawBtnAddEdge();
-void drawBtnDelEdge();
 
 void drawCircle(int x, int y, int R, bool r);
 void drawText(int nom, int x1, int y1, bool red);

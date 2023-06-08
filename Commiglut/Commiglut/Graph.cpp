@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int WinW = 900;
-int WinH = 600;
+int WinW = 960;
+int WinH = 720;
 int R;
 int ver = 0;
 
@@ -19,7 +19,7 @@ int Moving_Vertex;
 int x_coord_mouse;
 int y_coord_mouse;
 
-VertexCoord vertcrd[maxSize + 2];
+VertexCoordinates vertcrd[maxSize + 2];
 
 Graph graph;
 
@@ -37,12 +37,7 @@ Graph::Graph()
 	}
 }
 
-Graph::~Graph()
-{
-
-}
-
-int Graph::GetVertPos(const int& vertex)
+int Graph::GetVerticesPos(const int& vertex)
 {
 	for (size_t i = 0; i < vertList.size(); i++)
 		if (vertList[i] == vertex)
@@ -51,42 +46,15 @@ int Graph::GetVertPos(const int& vertex)
 	return -1;
 }
 
-int Graph::GetVertText(int i)
+int Graph::GetAmountEdges()
 {
-	return vertList[i];
-}
+	int numb = 0;
+	for (int i = 0; i < vertList.size(); i++)
+		for (int j = 0; j < vertList.size(); j++)
+			if (adjMatrix[i][j] > 0)
+				numb++;
 
-vector<int> Graph::GetVertList()
-{
-	return  vertList;
-}
-
-int Graph::GetAdjMatrixElem(int i, int j)
-{
-	return adjMatrix[i][j];
-}
-
-int Graph::GetAmountVerts()
-{
-	return vertList.size();
-}
-
-void Graph::SetEdgeZero(int i, int j)
-{
-	adjMatrix[i][j] = 0; adjMatrix[j][i] = 0;
-}
-
-bool Graph::IsEmpty()
-{
-	if (vertList.size() != 0)
-		return false;
-	else
-		return true;
-}
-
-bool Graph::IsFull()
-{
-	return (vertList.size() == maxSize);
+	return numb;
 }
 
 void Graph::InsertVertex(const int& vertex)
@@ -103,10 +71,10 @@ void Graph::InsertVertex(const int& vertex)
 void Graph::InsertEdge(const int& vertex1, const int& vertex2, int weight)
 {
 
-	if (GetVertPos(vertex1) != (-1) && GetVertPos(vertex2) != (-1))
+	if (GetVerticesPos(vertex1) != (-1) && GetVerticesPos(vertex2) != (-1))
 	{
-		int vertPos1 = GetVertPos(vertex1);
-		int vertPos2 = GetVertPos(vertex2);
+		int vertPos1 = GetVerticesPos(vertex1);
+		int vertPos2 = GetVerticesPos(vertex2);
 		if (adjMatrix[vertPos1][vertPos2] != 0 || adjMatrix[vertPos2][vertPos1] != 0)
 		{
 			cout << "Ребро между вершинами уже есть" << endl;
@@ -134,7 +102,7 @@ void Graph::InsertEdge(const int& vertex1, const int& vertex2, int weight)
 	}
 }
 
-void Graph::Print()
+void Graph::PrintGraph()
 {
 	if (!IsEmpty())
 	{
@@ -154,7 +122,7 @@ void Graph::Print()
 		cout << "\nГраф пуст\n" << endl;
 }
 
-void Graph::EraseLastVert()
+void Graph::EraseLastVertex()
 {
 	if (IsEmpty())
 	{
@@ -175,10 +143,10 @@ void Graph::EraseLastVert()
 
 void Graph::EraseEdge(const int& vertex1, const int& vertex2)
 {
-	if (GetVertPos(vertex1) != (-1) && GetVertPos(vertex2) != (-1))
+	if (GetVerticesPos(vertex1) != (-1) && GetVerticesPos(vertex2) != (-1))
 	{
-		int vertPos1 = GetVertPos(vertex1);
-		int vertPos2 = GetVertPos(vertex2);
+		int vertPos1 = GetVerticesPos(vertex1);
+		int vertPos2 = GetVerticesPos(vertex2);
 
 		if (adjMatrix[vertPos1][vertPos2] != 0 || adjMatrix[vertPos2][vertPos1] != 0)
 		{
@@ -198,23 +166,12 @@ void Graph::EraseEdge(const int& vertex1, const int& vertex2)
 	}
 }
 
-int Graph::GetAmountEdges()
-{
-	int numb = 0;
-	for (int i = 0; i < vertList.size(); i++)
-		for (int j = 0; j < vertList.size(); j++)
-			if (adjMatrix[i][j] > 0)
-				numb++;
-
-	return numb;
-}
-
 void Graph::DrawGraph()
 {
-	int n = graph.GetAmountVerts();
+	int n = graph.GetAmountVertices();
 	for (int i = 0; i < n; i++)
 		if (!standView)
-			setCoords(i, n);
+			SetCoordinats(i, n);
 
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < n; j++)
@@ -235,7 +192,7 @@ void Graph::DrawGraph()
 
 int ClickOnCircle(int x, int y)
 {
-	for (int i = 0; i < graph.GetAmountVerts(); i++)
+	for (int i = 0; i < graph.GetAmountVertices(); i++)
 		if (pow(x - vertcrd[i].x, 2) + pow(y - vertcrd[i].y, 2) <= pow(R, 2))
 			return i;
 
@@ -301,7 +258,7 @@ void mouseMove(int x, int y)
 	if (i != -1)
 		vertmouse[i] = true;
 	else
-		for (int j = 0; j < graph.GetAmountVerts(); j++)
+		for (int j = 0; j < graph.GetAmountVertices(); j++)
 			vertmouse[j] = false;
 
 	if (vertmove)
@@ -346,8 +303,8 @@ void mouseClick(int button, int state, int x, int y)
 
 			cout << "\nЗадача Коммивояжера:\n";
 
-			int** matrix = Change_Matrix();
-			bool checker = SalesmanPossible(matrix);
+			int** matrix = ChangeMatrix();
+			bool checker = IsSalesmanPossible(matrix);
 
 			if (!checker)
 			{
@@ -355,15 +312,15 @@ void mouseClick(int button, int state, int x, int y)
 				return;
 			}
 
-			int n = graph.GetAmountVerts();
+			int n = graph.GetAmountVertices();
 
 			while (Way.size() < n)
-				matrix = High_Zero(matrix);
+				matrix = HighZero(matrix);
 
 			cout << endl;
 
 			ButtonSalesmanSecond = true;
-			Print_Result();
+			PrintResult();
 
 			if (prohod)
 				prohod = false;
@@ -385,7 +342,7 @@ void mouseClick(int button, int state, int x, int y)
 			Graph New;
 			graph = New;
 
-			makeGraph();
+			MakeGraph();
 			return;
 		}
 
@@ -402,7 +359,7 @@ void mouseClick(int button, int state, int x, int y)
 		{
 			ButtonSalesmanSecond = false;
 			prohod = false;
-			int cur = graph.GetAmountVerts();
+			int cur = graph.GetAmountVertices();
 			graph.InsertVertex(cur + 1);
 
 			vertcrd[cur].x = WinW / 2;
@@ -417,9 +374,9 @@ void mouseClick(int button, int state, int x, int y)
 		{
 			ButtonSalesmanSecond = false;
 			prohod = false;
-			graph.EraseLastVert();
+			graph.EraseLastVertex();
 
-			int cur = graph.GetAmountVerts();
+			int cur = graph.GetAmountVertices();
 
 			return;
 		}
@@ -464,12 +421,12 @@ void mouseClick(int button, int state, int x, int y)
 	}
 }
 
-void drawBtnSalesman()
+void drawButtonSalesman()
 {
 	if (ButtonCheck == 1)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 	glVertex2i(10, WinH - 20);
@@ -496,12 +453,12 @@ void drawBtnSalesman()
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, name[i]);
 }
 
-void drawBtnNewGraph()
+void drawButtonNewGraph()
 {
 	if (ButtonCheck == 2)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 	glVertex2i(10, WinH - (WinH / 10) - 20);
@@ -535,12 +492,12 @@ void drawBtnNewGraph()
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, name1[i]);
 }
 
-void drawBtnAddVertex()
+void drawButtonAddVertex()
 {
 	if (ButtonCheck == 3)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 
@@ -569,12 +526,12 @@ void drawBtnAddVertex()
 
 }
 
-void drawBtnDelVertex()
+void drawButtonDelVertex()
 {
 	if (ButtonCheck == 4)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 
@@ -607,12 +564,12 @@ void drawBtnDelVertex()
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, name1[i]);
 }
 
-void drawBtnAddEdge()
+void drawButtonAddEdge()
 {
 	if (ButtonCheck == 5)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 	glVertex2i(10, WinH - 4 * (WinH / 10) - 20);
@@ -638,12 +595,12 @@ void drawBtnAddEdge()
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, name[i]);
 }
 
-void drawBtnDelEdge()
+void drawButtonDelEdge()
 {
 	if (ButtonCheck == 6)
-		glColor3f(0.603, 0.803, 0.196);
+		glColor3f(0.9, 0.9, 0.9);
 	else
-		glColor3f(0.980, 0.980, 0.823);
+		glColor3f(1.0, 1.0, 1.0);
 
 	glBegin(GL_QUADS);
 	glVertex2i(10, WinH - 5 * (WinH / 10) - 20);
@@ -668,7 +625,7 @@ void drawBtnDelEdge()
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, name[i]);
 }
 
-void makeGraph()
+void MakeGraph()
 {
 	standView = false;
 	int amountVerts, amountEdges, sourceVertex, targetVertex, edgeWeight;
@@ -694,10 +651,10 @@ void makeGraph()
 	}
 
 	cout << endl;
-	graph.Print();
+	graph.PrintGraph();
 }
 
-void reshape(int w, int h)
+void Reshape(int w, int h)
 {
 	WinW = w;
 	WinH = h;
@@ -709,7 +666,7 @@ void reshape(int w, int h)
 	glutPostRedisplay();
 }
 
-void display()
+void Display()
 {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -720,14 +677,14 @@ void display()
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	drawBtnNewGraph();
-	drawBtnSalesman();
+	drawButtonNewGraph();
+	drawButtonSalesman();
 
-	drawBtnAddVertex();
-	drawBtnDelVertex();
+	drawButtonAddVertex();
+	drawButtonDelVertex();
 
-	drawBtnAddEdge();
-	drawBtnDelEdge();
+	drawButtonAddEdge();
+	drawButtonDelEdge();
 
 	graph.DrawGraph();
 
@@ -735,13 +692,13 @@ void display()
 	{
 		for (int i = 0; i < New_Way.size() - 1; i++)
 		{
-			int vertPos1 = graph.GetVertPos(New_Way[i]);
-			int vertPos2 = graph.GetVertPos(New_Way[i + 1]);
+			int vertPos1 = graph.GetVerticesPos(New_Way[i]);
+			int vertPos2 = graph.GetVerticesPos(New_Way[i + 1]);
 
 			drawLine(i + 1, vertcrd[vertPos2].x, vertcrd[vertPos2].y, vertcrd[vertPos1].x, vertcrd[vertPos1].y, true);
 		}
 
-		for (int i = 0; i < graph.GetAmountVerts(); i++)
+		for (int i = 0; i < graph.GetAmountVertices(); i++)
 		{
 			for (int j = 0; j < New_Way.size(); j++)
 			{
@@ -759,9 +716,9 @@ void display()
 	glutSwapBuffers();
 }
 
-int** Change_Matrix()
+int** ChangeMatrix()
 {
-	int n = graph.GetAmountVerts();
+	int n = graph.GetAmountVertices();
 	int** matrix = new int* [n];
 
 	for (int i = 0; i < n; i++)
@@ -770,7 +727,7 @@ int** Change_Matrix()
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < n; j++)
 		{
-			int elem = graph.GetAdjMatrixElem(i, j);
+			int elem = graph.GetAdjMatrixElement(i, j);
 
 			if (elem == 0 or i == j)
 				matrix[i][j] = -1;
@@ -780,12 +737,12 @@ int** Change_Matrix()
 
 	if (ButtonSalesmanSecond == true)
 		cout << "Начальная матрица: \n";
-		Print_Matrix(matrix);
+		PrintMatrix(matrix);
 
 	return matrix;
 }
 
-int* Search_MinElem(int* line, int n)
+int* SearchMinElement(int* line, int n)
 {
 	int min = 1000000;
 
@@ -800,9 +757,9 @@ int* Search_MinElem(int* line, int n)
 	return line;
 }
 
-void Print_Matrix(int** matrix)
+void PrintMatrix(int** matrix)
 {
-	int n = graph.GetAmountVerts();
+	int n = graph.GetAmountVertices();
 
 	for (int i = 0; i < n; i++)
 	{
@@ -813,13 +770,13 @@ void Print_Matrix(int** matrix)
 	}
 }
 
-int** Reduct_Matrix(int** oldmatrix)
+int** ReductMatrix(int** oldmatrix)
 {
 	int** matrix = oldmatrix;
-	int n = graph.GetAmountVerts();
+	int n = graph.GetAmountVertices();
 
 	for (int i = 0; i < n; i++)
-		matrix[i] = Search_MinElem(matrix[i], n);
+		matrix[i] = SearchMinElement(matrix[i], n);
 
 	for (int i = 0; i < n; i++)
 	{
@@ -836,16 +793,16 @@ int** Reduct_Matrix(int** oldmatrix)
 	if (ButtonSalesmanSecond == true) 
 	{
 		cout << "\nРедуцированная матрица: \n";
-		Print_Matrix(matrix);
+		PrintMatrix(matrix);
 	}
 
 	return matrix;
 }
 
-int** High_Zero(int** oldmatrix)
+int** HighZero(int** oldmatrix)
 {
-	int n = graph.GetAmountVerts();
-	int** matrix = Reduct_Matrix(oldmatrix);
+	int n = graph.GetAmountVertices();
+	int** matrix = ReductMatrix(oldmatrix);
 	int max = -1;
 	int line = 0, column = 0;
 
@@ -893,7 +850,7 @@ int** High_Zero(int** oldmatrix)
 	{
 		cout << endl;
 		cout << "Матрица после удаления 0 с наибольшей оценкой: \n";
-		Print_Matrix(matrix);
+		PrintMatrix(matrix);
 		cout << "\nПромежуточные отрезки путей: ";
 
 		for (int i = 0; i < Way.size(); i++)
@@ -905,7 +862,7 @@ int** High_Zero(int** oldmatrix)
 	return matrix;
 }
 
-void Print_Result()
+void PrintResult()
 {
 	int second = Way[0].second;
 	int i = 2;
@@ -913,8 +870,8 @@ void Print_Result()
 	New_Way.push_back(Way[0].first);
 	New_Way.push_back(Way[0].second);
 
-	while (i != graph.GetAmountVerts() + 1)
-		for (int j = 1; j < graph.GetAmountVerts(); j++)
+	while (i != graph.GetAmountVertices() + 1)
+		for (int j = 1; j < graph.GetAmountVertices(); j++)
 			if (Way[j].first == second)
 			{
 				second = Way[j].second;
@@ -941,14 +898,14 @@ void Print_Result()
 		int line = Way[i].first - 1;
 		int column = Way[i].second - 1;
 
-		sum += graph.GetAdjMatrixElem(line, column);
+		sum += graph.GetAdjMatrixElement(line, column);
 	}
 
 	cout << "\nДлина пути : " << sum << endl;
 
 }
 
-void setCoords(int i, int n)
+void SetCoordinats(int i, int n)
 {
 	int rad;
 	int x0 = WinW / 2;
@@ -973,16 +930,16 @@ void setCoords(int i, int n)
 	vertcrd[i].y = y1;
 }
 
-bool SalesmanPossible(int** matrix)
+bool IsSalesmanPossible(int** matrix)
 {
 	if (graph.IsEmpty())
 		return false;
 
-	for (int i = 0; i < graph.GetAmountVerts(); i++)
+	for (int i = 0; i < graph.GetAmountVertices(); i++)
 	{
 		int cnt = 0;
 
-		for (int j = 0; j < graph.GetAmountVerts(); j++)
+		for (int j = 0; j < graph.GetAmountVertices(); j++)
 			if (matrix[i][j] > 0)
 				cnt++;
 

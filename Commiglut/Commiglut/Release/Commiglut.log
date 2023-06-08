@@ -1,81 +1,64 @@
-﻿  Graph.cpp
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(143,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(147,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(204,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(205,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(360,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(470,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(470,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(470,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(472,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(472,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(472,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(494,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(495,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(502,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(502,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(502,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(504,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(504,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(504,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(527,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(529,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(532,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(534,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(541,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(541,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(541,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(543,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(543,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(543,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(565,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(567,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(575,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(575,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(575,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(577,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(577,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(577,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(600,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(602,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(605,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(606,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(613,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(613,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(613,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(615,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(615,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(615,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(635,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(637,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(644,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(644,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(644,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(646,27): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(646,20): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(646,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(665,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(667,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(736,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(746,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(899,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(927,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(939,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(969,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(970,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1110,22): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1110,17): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1110,12): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1123,17): warning C4305: аргумент: усечение из "double" в "GLfloat"
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1170,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1171,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1177,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1178,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1186,18): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
-C:\Users\Admin\source\repos\Commiglut\Commiglut\Graph.cpp(1186,14): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+﻿  Commiglut.cpp
+  Graph.cpp
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(52,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(53,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(111,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(115,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(317,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(427,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(427,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(427,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(451,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(452,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(459,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(459,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(459,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(484,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(486,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(489,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(491,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(498,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(498,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(498,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(522,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(524,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(532,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(532,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(532,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(557,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(559,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(562,41): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(563,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(570,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(570,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(570,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(592,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(594,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(601,23): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(601,18): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(601,13): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(622,32): warning C4244: аргумент: преобразование "double" в "GLint", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(624,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(693,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(703,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(856,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(884,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(896,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(926,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(927,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(991,22): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(991,17): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(991,12): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1004,17): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1051,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1052,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1058,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1059,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1067,18): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+C:\Users\Admin\source\repos\Salesman\Commiglut\Graph.cpp(1067,14): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
   Создание кода
-  2 of 256 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+  5 of 256 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
-  Commiglut.vcxproj -> C:\Users\Admin\source\repos\Commiglut\Release\Commiglut.exe
+  Commiglut.vcxproj -> C:\Users\Admin\source\repos\Salesman\Release\Commiglut.exe
