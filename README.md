@@ -6,9 +6,9 @@
 https://drive.google.com/file/d/1Q9TtYbauFhmfY7rVXoevHiSZFASvOIn8/view?usp=sharing
 
 # Работы
-Автоматизированное рабочее место разработчика компьютерной игры: BCCTool
+Автоматизированное рабочее место разработчика компьютерной игры: [BCCTool](https://github.com/jaken525/PNRPU_Tvorcheskie/tree/main/BCCTool)
 
-Задача Коммивояжёра: Commiglut
+Задача Коммивояжёра: [Commiglut](https://github.com/jaken525/PNRPU_Tvorcheskie/tree/main/Commiglut)
 
 # Видео
 https://youtu.be/JylCImeD5mg
