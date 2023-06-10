@@ -7,8 +7,8 @@
 Можно загрузить здесь:
 https://drive.google.com/file/d/1Q9TtYbauFhmfY7rVXoevHiSZFASvOIn8/view?usp=sharing
 
-## Работы
-Автоматизированное рабочее место разработчика компьютерной игры: [BCCTool](https://github.com/jaken525/PNRPU_Tvorcheskie/tree/main/BCCTool)
+## Отчёты
+Автоматизированное рабочее место разработчика компьютерной игры: [BCCTool](https://github.com/jaken525/PNRPU_Tvorcheskie/blob/main/BCCTool/Отчёт.MD)
 
 Задача Коммивояжёра: [Commiglut](https://github.com/jaken525/PNRPU_Tvorcheskie/tree/main/Commiglut)
 
