@@ -11,4 +11,4 @@ https://drive.google.com/file/d/1Q9TtYbauFhmfY7rVXoevHiSZFASvOIn8/view?usp=shari
 Задача Коммивояжёра: [Commiglut](https://github.com/jaken525/PNRPU_Tvorcheskie/tree/main/Commiglut)
 
 # Видео
-https://youtu.be/JylCImeD5mg
+Ссылка на YouTube: https://youtu.be/JylCImeD5mg
